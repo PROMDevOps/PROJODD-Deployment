@@ -20,6 +20,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: postgresql-{{ .Values.envAlias }}-pgadmin4
+                name: promjodd-{{ .Values.envAlias }}-pgadmin4
                 port:
                   number: 80
