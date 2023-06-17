@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: pgadmin-cert
+spec:
+  secretName: pgadmin-cert
+  dnsNames:
+    - {{ .Values.domainPgAdmin }}
+  issuerRef:
+    name: lets-encrypt-issuer-prod
+    kind: ClusterIssuer
+    group: cert-manager.io
