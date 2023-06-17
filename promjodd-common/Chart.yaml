@@ -24,7 +24,13 @@ dependencies:
   ### Car Park Service ###
   - name: "generic-app"
     alias: carpark-api
-    condition: carpark-svc.enabled
+    condition: carpark-api.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
+
+  - name: "generic-app"
+    alias: pmt-driver-ui
+    condition: pmt-driver-ui.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
 

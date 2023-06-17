@@ -1,0 +1,4 @@
+pmt-driver-ui:
+  pods:
+    image:
+      tag: "v0.0.2"
