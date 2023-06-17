@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: pmt-driver-ui-cert
+spec:
+  secretName: pmt-driver-ui-cert
+  dnsNames:
+    - {{ .Values.domainPmtDriverUi }}
+  issuerRef:
+    name: lets-encrypt-issuer-prod
+    kind: ClusterIssuer
+    group: cert-manager.io
