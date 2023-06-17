@@ -1,0 +1,15 @@
+envAlias: production
+domainCarParkApi: carpark-api.promjodd.prom.co.th
+domainKonga: konga.promjodd.prom.co.th
+domainKong: api.promjodd.prom.co.th
+domainPub: promjodd.com
+
+carpark-api:
+  ingress:
+    enabled: false
+
+  pods:
+    env:
+      # To solve ulimit(128) issue
+      - name: DOTNET_USE_POLLING_FILE_WATCHER
+        value: "true"

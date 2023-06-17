@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kong-config
+data:
+  kong.yml: |
+    _format_version: "3.0"
+    _transform: true
+
+    services:
+    - name: carpark-api
+      url: http://promjodd-{{ .Values.envAlias }}-carpark-api/
+      routes:
+      - name: carpark-api
+        strip_path: true
+        paths:
+        - /

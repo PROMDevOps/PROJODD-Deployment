@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: carpark-api-cert
+spec:
+  secretName: carpark-api-cert
+  dnsNames:
+    - {{ .Values.domainCarParkApi }}
+  issuerRef:
+    name: lets-encrypt-issuer-prod
+    kind: ClusterIssuer
+    group: cert-manager.io
