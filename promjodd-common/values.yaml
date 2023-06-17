@@ -100,3 +100,22 @@ postgresql-carpark-api:
     existingSecret: carpark-api-postgres-secret
     secretKeys:
       adminPasswordKey: adminPasswordKey
+
+pmt-driver-ui:
+  enabled: true
+  nameOverride: pmt-driver-ui
+
+  podDisruptionBudget:
+    enabled: false
+
+  pods:
+    controller: deployment
+    image:
+      name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promjodd/pmt-driver-ui
+  service:
+    enabled: true
+    ports:
+      - port: 80
+        targetPort: 80
+        protocol: TCP
+        name: http

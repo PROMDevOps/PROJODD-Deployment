@@ -1,0 +1,4 @@
+pmt-driver-ui:
+  pods:
+    image:
+      tag: "<<pmt-driver-ui-image-tag>>"

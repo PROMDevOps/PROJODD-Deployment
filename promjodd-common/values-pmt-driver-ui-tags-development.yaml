@@ -1,0 +1,4 @@
+pmt-driver-ui:
+  pods:
+    image:
+      tag: "main-a549a05"
