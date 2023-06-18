@@ -41,8 +41,8 @@ dependencies:
     repository: "https://charts.bitnami.com/bitnami"
     version: "12.5.7"
 
-  - name: "pgadmin4"
-    alias: pgadmin4
-    condition: pgadmin4.enabled
-    repository: "https://helm.runix.net"
-    version: "1.15.2"
+  - name: "pgweb"
+    alias: pgweb
+    condition: pgweb.enabled
+    repository: "https://charts.ectobit.com"
+    version: "0.1.8"

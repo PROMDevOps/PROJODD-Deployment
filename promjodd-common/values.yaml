@@ -101,13 +101,11 @@ postgresql-carpark-api:
     secretKeys:
       adminPasswordKey: adminPasswordKey
 
-pgadmin4:
+pgweb:
   enabled: true
-  nameOverride: pgadmin4
+  nameOverride: pgweb
   ingress:
     enabled: false
-  persistentVolume:
-    size: 300Mi
 
 pmt-driver-ui:
   enabled: true
