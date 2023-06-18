@@ -34,8 +34,15 @@ dependencies:
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
 
+  ### pgSQL ###
   - name: "postgresql"
     alias: postgresql-carpark-api
     condition: postgresql-carpark-api.enabled
     repository: "https://charts.bitnami.com/bitnami"
     version: "12.5.7"
+
+  - name: "pgweb"
+    alias: pgweb
+    condition: pgweb.enabled
+    repository: "https://charts.ectobit.com"
+    version: "0.1.8"
