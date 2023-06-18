@@ -5,7 +5,7 @@ domainKonga: konga.promjodd-dev.prom.co.th
 domainKong: api.promjodd-dev.prom.co.th
 domainPub: promjodd-dev.com
 
-domainPgAdmin: pgadmin.promrub-np.its-software-services.com
+domainPgAdmin: pgweb.promrub-np.its-software-services.com
 
 carpark-api:
   ingress:

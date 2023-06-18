@@ -4,7 +4,7 @@ domainPmtDriverUi: pmt-driver-ui.promjodd.prom.co.th
 domainKonga: konga.promjodd.prom.co.th
 domainKong: api.promjodd.prom.co.th
 domainPub: promjodd.com
-domainPgAdmin: pgadmin.promjodd.prom.co.th
+domainPgAdmin: pgweb.promjodd.prom.co.th
 
 carpark-api:
   ingress:
