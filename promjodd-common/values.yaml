@@ -102,6 +102,8 @@ postgresql-carpark-api:
       adminPasswordKey: adminPasswordKey
 
 pgweb:
+  #CREATE USER bank WITH PASSWORD 'xxxxx';
+  #GRANT ALL ON ALL TABLES IN SCHEMA public TO bank;
   enabled: true
   nameOverride: pgweb
   ingress:
