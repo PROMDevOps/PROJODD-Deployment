@@ -4,9 +4,6 @@ metadata:
   name: pgadmin-ing
   annotations:
     nginx.ingress.kubernetes.io/backend-protocol: HTTP
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      proxy_set_header X-Scheme $scheme;
-      proxy_set_header Host $host;
 spec:
   ingressClassName: nginx
   tls:
