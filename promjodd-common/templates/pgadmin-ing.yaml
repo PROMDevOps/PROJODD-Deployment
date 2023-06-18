@@ -6,9 +6,7 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: HTTP
     nginx.ingress.kubernetes.io/configuration-snippet: |
       proxy_set_header X-Scheme $scheme;
-      #proxy_set_header Host $host;
-      proxy_set_header Host $host:$proxy_port;
-      proxy_set_header Referer http://$host:$proxy_port/$1;
+      proxy_set_header Host $host;
 spec:
   ingressClassName: nginx
   tls:
