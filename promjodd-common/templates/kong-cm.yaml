@@ -18,7 +18,7 @@ data:
 
     plugins:
     - name: http-log
-      service: SERVICE_NAME|SERVICE_ID
+      service: SERVICE_NAME
       config:
         http_endpoint: http://promjodd-{{ .Values.envAlias }}-telegraf/telegraf
         method: POST
