@@ -7,7 +7,6 @@ metadata:
     nginx.ingress.kubernetes.io/configuration-snippet: |
       proxy_set_header X-Scheme $scheme;
       proxy_set_header Host $host;
-      proxy_redirect off;
 spec:
   ingressClassName: nginx
   tls:
