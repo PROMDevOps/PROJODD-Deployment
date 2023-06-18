@@ -20,7 +20,7 @@ data:
     - name: http-log
       service: carpark-api
       config:
-        http_endpoint: http://promjodd-{{ .Values.envAlias }}-telegraf/telegraf
+        http_endpoint: http://promjodd-{{ .Values.envAlias }}-telegraf:8080/telegraf
         method: POST
         timeout: 1000
         keepalive: 1000
