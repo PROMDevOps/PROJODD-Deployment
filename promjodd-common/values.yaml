@@ -61,6 +61,10 @@ konga:
         protocol: TCP
         name: http
 
+telegraf:
+  enabled: true
+  nameOverride: telegraf
+
 carpark-api:
   enabled: true
   nameOverride: carpark-api
