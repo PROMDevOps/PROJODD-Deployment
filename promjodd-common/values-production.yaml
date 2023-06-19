@@ -1,6 +1,6 @@
 envAlias: production
 domainCarParkApi: carpark-api.promjodd.prom.co.th
-domainPmtDriverUi: pmt-driver-ui.promjodd.prom.co.th
+domainPmtDriverUi: payment-driver-ui.promjodd.prom.co.th
 domainKonga: konga.promjodd.prom.co.th
 domainKong: api.promjodd.prom.co.th
 domainPub: promjodd.com
