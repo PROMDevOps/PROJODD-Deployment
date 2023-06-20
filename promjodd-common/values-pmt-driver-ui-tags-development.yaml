@@ -1,4 +1,4 @@
 pmt-driver-ui:
   pods:
     image:
-      tag: "develop-3bf1c82"
+      tag: "develop-b4556f5"
