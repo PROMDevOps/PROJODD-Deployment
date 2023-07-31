@@ -1,4 +1,4 @@
 carpark-api:
   pods:
     image:
-      tag: "main-84dd822"
+      tag: "main-4e7dfa0"
