@@ -16,6 +16,12 @@ carpark-api:
       - name: DOTNET_USE_POLLING_FILE_WATCHER
         value: "true"
 
+      - name: JAEGER_AGENT_HOST
+        value: "tempo.tempo.svc.cluster.local"
+
+      - name: JAEGER_AGENT_PORT
+        value: "6831"
+
 pmt-driver-ui:
   ingress:
     enabled: false
