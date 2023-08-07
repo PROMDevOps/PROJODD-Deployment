@@ -20,7 +20,7 @@ carpark-api:
         value: "http://tempo.tempo.svc.cluster.local"
 
       - name: JAEGER_AGENT_PORT
-        value: "6831"
+        value: "4317"
 
 pmt-driver-ui:
   ingress:
