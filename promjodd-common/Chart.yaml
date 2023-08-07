@@ -34,6 +34,13 @@ dependencies:
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
 
+  ### Grafana Agent ###
+  #- name: "grafana-agent"
+  #  alias: grafana-agent
+  #  condition: grafana-agent.enabled
+  #  repository: "https://grafana.github.io/helm-charts"
+  #  version: "0.19.0"
+
   ### pgSQL ###
   - name: "postgresql"
     alias: postgresql-carpark-api
