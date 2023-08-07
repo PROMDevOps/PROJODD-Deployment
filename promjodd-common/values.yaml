@@ -128,3 +128,7 @@ pmt-driver-ui:
         targetPort: 80
         protocol: TCP
         name: http
+
+### Grafana Agent ###
+#grafana-agent:
+#  enabled: true
