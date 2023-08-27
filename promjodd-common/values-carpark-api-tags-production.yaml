@@ -1,4 +1,4 @@
 carpark-api:
   pods:
     image:
-      tag: "v0.0.8.8"
+      tag: "v0.0.9"
