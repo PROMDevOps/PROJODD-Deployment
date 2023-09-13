@@ -1,0 +1,4 @@
+lpr-web:
+  pods:
+    image:
+      tag: "<<lpr-web-image-tag>>"

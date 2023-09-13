@@ -132,3 +132,36 @@ pmt-driver-ui:
 ### Grafana Agent ###
 #grafana-agent:
 #  enabled: true
+
+
+### Car Park API ###
+lpr-web:
+  enabled: true
+  nameOverride: lpr-web
+
+  podDisruptionBudget:
+    enabled: false
+
+  pods:
+    controller: deployment
+    image:
+      name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promjodd/lpr-web
+    imagePullSecrets :
+      - name: gcr-image-pull # TODO : use External-Secret to create this
+    #volumes:
+    #  - name: appsetting
+    #    secret:
+    #      secretName: carpark-api-appsetting
+    #      optional: false
+    #volumeMounts:
+    #  - name: appsetting
+    #    mountPath: /app/appsettings.json
+    #    subPath: appsettings.json
+
+  service:
+    enabled: true
+    ports:
+      - port: 80
+        targetPort: 80
+        protocol: TCP
+        name: http
