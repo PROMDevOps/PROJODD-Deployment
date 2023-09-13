@@ -34,6 +34,12 @@ dependencies:
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
 
+  - name: "generic-app"
+    alias: lpr-web
+    condition: lpr-web.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
+
   ### Grafana Agent ###
   #- name: "grafana-agent"
   #  alias: grafana-agent

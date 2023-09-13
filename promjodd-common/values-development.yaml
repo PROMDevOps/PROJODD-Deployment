@@ -5,6 +5,7 @@ domainKonga: konga.promjodd-dev.prom.co.th
 domainKong: api.promjodd-dev.prom.co.th
 domainPub: promjodd-dev.com
 domainPgAdmin: pgweb.promjodd-dev.prom.co.th
+domainLprWeb: lpr-web.promjodd-dev.prom.co.th
 
 carpark-api:
   ingress:
@@ -26,3 +27,20 @@ carpark-api:
 pmt-driver-ui:
   ingress:
     enabled: false
+
+lpr-web:
+  ingress:
+    enabled: false
+
+  pods:
+    replicas: 2
+    env:
+      # To solve ulimit(128) issue
+      - name: DOTNET_USE_POLLING_FILE_WATCHER
+        value: "true"
+
+      - name: JAEGER_AGENT_HOST
+        value: "http://tempo.tempo.svc.cluster.local"
+
+      - name: JAEGER_AGENT_PORT
+        value: "4317"
