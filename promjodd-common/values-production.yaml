@@ -23,6 +23,13 @@ carpark-api:
       - name: JAEGER_AGENT_PORT
         value: "4317"
 
+      - name: Jwt__Key
+        valueFrom:
+          secretKeyRef:
+            name: carpark-api-appsetting
+            key: CARPARK_JWT_KEY
+            optional: false
+
 pmt-driver-ui:
   ingress:
     enabled: false

@@ -14,3 +14,8 @@ spec:
     remoteRef:
       key: initial-secret
       property: APP_SETTING_CARPARK_API
+
+  - secretKey: CARPARK_JWT_KEY
+    remoteRef:
+      key: initial-secret
+      property: CARPARK_JWT_KEY
