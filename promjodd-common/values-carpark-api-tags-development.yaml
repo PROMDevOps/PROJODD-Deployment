@@ -1,4 +1,4 @@
 carpark-api:
   pods:
     image:
-      tag: "main-f849c86"
+      tag: "develop-f849c86"
