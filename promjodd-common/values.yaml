@@ -136,7 +136,7 @@ pmt-driver-ui:
 
 ### Car Park API ###
 lpr-web:
-  enabled: true
+  enabled: false
   nameOverride: lpr-web
 
   podDisruptionBudget:
